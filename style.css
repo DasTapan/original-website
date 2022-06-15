@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.sidebar,
+.main {
+    border: 2px solid;
+}
+
+.sidebar {
+    border-color: red;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.main {
+    border-color: blue;
+    margin-left: 20vw; 
+    flex: 1;
+}
+
+div.child {
+    height: 100vh;
+    border: 5px solid greenyellow;
+    background-color: black;
+}
