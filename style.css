@@ -12,21 +12,53 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar,
+/* side-bar begins here */
+.sidebar {
+    width: 17vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #7676f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar div {
+    width: 95%;
+    background-color: crimson;
+}
+
+div.sidebar div.banner {
+    color: white;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div.banner span {
+    font-style: italic;
+    margin-left: 35%;
+}
+
+div.link-bar ul {
+    list-style: none;
+}
+
+div.link-bar ul li a {
+    text-decoration: none;
+}
+
+/* sidebar ends here */
 .main {
     border: 2px solid;
 }
 
-.sidebar {
-    border-color: red;
-    width: 20vw;
-    height: 100vh;
-    position: fixed;
-}
-
 .main {
     border-color: blue;
-    margin-left: 20vw; 
+    margin-left: 17vw; 
     flex: 1;
 }
 
