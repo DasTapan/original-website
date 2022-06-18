@@ -94,7 +94,7 @@ div.vid {
 div.card {
     width: 95%;
     height: 50%;
-    background-color: slategray;
+    background-color: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +122,7 @@ div.pic div {
 }
 
 div.text {
+    background-color: slategray;
     color: white;
     font-style: italic;
     text-align: justify;
@@ -132,7 +133,7 @@ div.text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     color: black;
     font-size: 17px;
     line-height: 1.5em;
@@ -141,7 +142,20 @@ div.text {
 }
 
 #about .banner {
-    width: 85%;
-    height: 40%;
-    background-color: darkviolet;
+    width: 90%;
+    height: 46%;
+    background-image: url('./Img/server.jpg');
+    background-size: cover;
+}
+
+div.about-text {
+    height: 25%;
+    width: 95%;
+    text-align: justify;
+    line-height: 1.1em;
+}
+
+div.about-text p {
+    padding: 0.75em;
+    margin: 0;
 }
