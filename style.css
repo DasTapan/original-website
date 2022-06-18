@@ -26,7 +26,6 @@ body {
 
 .sidebar div {
     width: 95%;
-    background-color: crimson;
 }
 
 div.sidebar div.banner {
@@ -45,25 +44,104 @@ div.banner span {
 
 div.link-bar ul {
     list-style: none;
+    padding-left: 28%;
+    line-height: 3.8em;
 }
 
 div.link-bar ul li a {
     text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+div.icon {
+    height: 10%;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
 /* sidebar ends here */
-.main {
-    border: 2px solid;
-}
 
 .main {
-    border-color: blue;
     margin-left: 17vw; 
     flex: 1;
 }
 
 div.child {
     height: 100vh;
-    border: 5px solid greenyellow;
-    background-color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.vid,
+div.card {
+    border-radius: 0.7em;
+}
+
+div.vid {
+    width: 65%;
+    height: 45%;
+}
+
+div.card {
+    width: 95%;
+    height: 50%;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.card .pic,
+.text {
+    width: 95%;
+    height: 48%;
+}
+
+div.pic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 1%;
+}
+
+div.pic div {
+    height: 90%;
+    width: 80%;
+    background-image: url('./Img/consulting.jpg');
+    background-size: cover;
+}
+
+div.text {
+    color: white;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#about .banner {
+    width: 85%;
+    height: 40%;
+    background-color: darkviolet;
 }
