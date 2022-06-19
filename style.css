@@ -6,7 +6,7 @@ body {
 
 body {
     display: flex;
-} 
+}
 
 * {
     box-sizing: border-box;
@@ -17,8 +17,9 @@ body {
     width: 17vw;
     height: 100vh;
     position: fixed;
-    background-color: #7676f3;
+
     display: flex;
+    background-color: #7676f3;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -62,10 +63,11 @@ div.icon {
     font-style: italic;
     text-align: center;
 }
+
 /* sidebar ends here */
 
 .main {
-    margin-left: 17vw; 
+    margin-left: 17vw;
     flex: 1;
 }
 
@@ -94,8 +96,9 @@ div.vid {
 div.card {
     width: 95%;
     height: 50%;
-    background-color: inherit;
+
     display: flex;
+    background-color: inherit;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -122,11 +125,11 @@ div.pic div {
 }
 
 div.text {
-    background-color: slategray;
     color: white;
     font-style: italic;
     text-align: justify;
     line-height: 1.5em;
+    background-color: slategray;
 }
 
 #about {
@@ -134,6 +137,7 @@ div.text {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
     color: black;
     font-size: 17px;
     line-height: 1.5em;
@@ -158,4 +162,152 @@ div.about-text {
 div.about-text p {
     padding: 0.75em;
     margin: 0;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#service div.service-card {
+    height: 32%;
+    width: 95%;
+    line-height: 1.5em;
+    font-style: italic;
+
+    border-radius: 0.3em;
+    padding: 0.9em;
+    background-color: tomato;
+}
+
+div.service-card img {
+    float: right;
+    height: 75%;
+    width: 25%;
+    margin-top: 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: deeppink;
+}
+
+#contact h2 {
+    margin: 0;
+}
+
+div.contact-pic,
+.contact-text {
+    height: 45%;
+}
+
+div.contact-pic {
+    width: 60%;
+    border-radius: 0.3em;
+    object-fit: contain;
+}
+
+div.contact-text {
+    width: 95%;
+    background-color: yellow;
+}
+
+div.contact-text h3 {
+    text-align: center;
+}
+
+div.contact-card {
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 44px;
+    width: 40%;
+    height: 70%;
+    margin-left: 7%;
+
+    float: left;
+    background-color: indigo;
+}
+
+#enquiry {
+    background-color: springgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form.enq-form {
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 70%;
+    padding: 50px;
+
+    background-color: #F6F7F8;
+}
+
+div.form-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.form-row input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 75%;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 7px;
+}
+
+div.form-row label {
+    padding: 7px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    color: #999999;
+
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    resize: none;
+    min-height: 200px;
+    width: 76%;
+}
+
+div.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76AEED;
+}
+
+.form-row button:active {
+    background-color: #407FC7;
 }
