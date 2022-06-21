@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -72,6 +76,11 @@ div.icon {
     text-align: center;
 }
 
+ul li a:hover {
+    display: block;
+    transform: scale3d(1.1, 1.1, 1.1);
+    /* cursor: pointer;     */
+}
 /* sidebar ends here */
 
 .main {
@@ -81,7 +90,6 @@ div.icon {
 
 div.child {
     height: 100vh;
-    background-color: white;
 }
 
 #home {
@@ -89,6 +97,8 @@ div.child {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-image: url('./Img/space-bg.jpg');
+    background-size: contain;
 }
 
 div.vid,
@@ -125,10 +135,31 @@ div.pic {
     column-gap: 1%;
 }
 
-div.pic div {
+div.pic .one {
     height: 90%;
     width: 80%;
     background-image: url('./Img/consulting.jpg');
+    background-size: cover;
+}
+
+div.pic .two {
+    height: 90%;
+    width: 80%;
+    background-image: url('./Img/light-bulb.jpg');
+    background-size: cover;
+}
+
+div.pic .three {
+    height: 90%;
+    width: 80%;
+    background-image: url('./Img/table-top-view.jpg');
+    background-size: cover;
+}
+
+div.pic .four {
+    height: 90%;
+    width: 80%;
+    background-image: url('./Img/laptop.jpg');
     background-size: cover;
 }
 
@@ -146,6 +177,7 @@ div.text {
     align-items: center;
     justify-content: space-between;
 
+    background-color:  #f1eae8 ;
     color: black;
     font-size: 17px;
     line-height: 1.5em;
@@ -153,9 +185,17 @@ div.text {
     font-style: italic;
 }
 
+#about h2 {
+    margin: auto;
+    text-decoration: underline;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #about .banner {
     width: 90%;
     height: 46%;
+
     background-image: url('./Img/server.jpg');
     background-size: cover;
 }
@@ -177,17 +217,27 @@ div.about-text p {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    background-color: #fbe2df;
+}
+
+#service h2 {
+    margin: auto;
+    text-decoration: underline;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #service div.service-card {
     height: 32%;
-    width: 95%;
     line-height: 1.5em;
     font-style: italic;
+    color: white;
+    font-weight: bold;
 
     border-radius: 0.3em;
     padding: 0.9em;
-    background-color: tomato;
+    background-color: #84898f;
 }
 
 div.service-card img {
@@ -202,11 +252,23 @@ div.service-card img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: deeppink;
+    background-image: url('./Img/metro.jpg');
+    background-size: cover;
+}
+
+#contact h2,
+h3 {
+    color: crimson;
+    text-decoration: underline;
 }
 
 #contact h2 {
-    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#contact h3 {
+    font-size: 20px;
 }
 
 div.contact-pic,
@@ -222,11 +284,25 @@ div.contact-pic {
 
 div.contact-text {
     width: 95%;
-    background-color: yellow;
+    background-color: transparent;
 }
 
 div.contact-text h3 {
     text-align: center;
+}
+
+div.contact-sub-heading {
+    width: 90px;
+    height: 30px;
+    margin: 8px auto;
+    padding: 7px;
+    text-align: center;
+    
+    border: 2px solid plum;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: whitesmoke;
 }
 
 div.contact-card {
@@ -239,17 +315,26 @@ div.contact-card {
     width: 40%;
     height: 70%;
     margin-left: 7%;
+    border-radius: 5px;
 
     float: left;
-    background-color: indigo;
+    background-color: #bfc3c7;
+    border: 2px solid floralwhite;
 }
 
 #enquiry {
-    background-color: springgreen;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#enquiry h2 {
+    color: dimgrey;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
 }
 
 form.enq-form {
